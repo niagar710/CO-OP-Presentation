@@ -1,0 +1,27 @@
+.custom-footer {
+  background: linear-gradient(to right, #7AC1FF, #A7B5E4);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Quicksand';
+}
+
+.footer-branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.slogan {
+  font-weight: 600;  
+}
+
+.footer-branding img {
+  margin-bottom: 5px;
+}
