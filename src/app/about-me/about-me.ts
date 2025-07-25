@@ -1,8 +1,9 @@
 import { Component, HostListener } from '@angular/core';
+import { ProfileCard } from '../core/shared/profile-card/profile-card';
 
 @Component({
   selector: 'app-about-me',
-  imports: [],
+  imports: [ProfileCard],
   templateUrl: './about-me.html',
   styleUrl: './about-me.css'
 })
