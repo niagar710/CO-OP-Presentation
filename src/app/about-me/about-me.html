@@ -1,1 +1,40 @@
-<p>about-me works!</p>
+<div class="about-me-container">
+  <aside class="sidebar">
+    <ul>
+      <li><a class="nav-link" (click)="scrollTo('about-me', $event)">About Me</a></li>
+      <li><a class="nav-link" (click)="scrollTo('coop-program', $event)">CO-OP Program</a></li>
+      <li><a class="nav-link" (click)="scrollTo('key-learnings', $event)">Key Learnings</a></li>
+      <li><a class="nav-link" (click)="scrollTo('growth', $event)">Developer Growth</a></li>
+      <li><a class="nav-link" (click)="scrollTo('timeline', $event)">Timeline</a></li>
+    </ul>
+  </aside>
+
+  <section class="main-content">
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>I’m Tania Garland, a Programmer Analyst Co-op...</p>
+    </section>
+
+    <section id="coop-program">
+      <h2>About the Co-op Program</h2>
+      <p>My co-op experience was a semester-long opportunity...</p>
+    </section>
+
+    <section id="key-learnings">
+      <h2>Key Learnings or Highlights</h2>
+      <ul>
+        <li>Gained hands-on experience with Angular...</li>
+      </ul>
+    </section>
+
+    <section id="growth">
+      <h2>My Growth as a Developer</h2>
+      <p>When I started the program, I had limited experience...</p>
+    </section>
+
+    <section id="timeline">
+      <h2>Photo or Timeline Visual</h2>
+      <p>Timeline or images go here.</p>
+    </section>
+  </section>
+</div>
