@@ -14,7 +14,7 @@ html {
 
 .sidebar {
   width: 200px;
-  position: sticky;
+  position: fixed;
   top: 100px; 
   background-color: transparent;
   padding-right: 20px;
@@ -44,7 +44,8 @@ html {
 
 .main-content {
   flex: 1;
-  max-width: 800px;
+  max-width: 1200px;
+  margin-left: 220px; 
 }
 
 section {
