@@ -1,9 +1,10 @@
 import { Component, HostListener } from '@angular/core';
 import { ProfileCard } from '../core/shared/profile-card/profile-card';
+import { CoopProgram } from '../core/shared/coop-program/coop-program';
 
 @Component({
   selector: 'app-about-me',
-  imports: [ProfileCard],
+  imports: [ProfileCard, CoopProgram],
   templateUrl: './about-me.html',
   styleUrl: './about-me.css'
 })

@@ -1,0 +1,47 @@
+.coop-container {
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.badges {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e0e7ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.badge i {
+  color: #4f46e5;
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #d1d5db;
+  padding-top: 1rem;
+}
+
+.step {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+}
