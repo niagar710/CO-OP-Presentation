@@ -1,10 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 import { ProfileCard } from '../core/shared/profile-card/profile-card';
 import { CoopProgram } from '../core/shared/coop-program/coop-program';
+import { TChart } from '../core/shared/t-chart/t-chart';
 
 @Component({
   selector: 'app-about-me',
-  imports: [ProfileCard, CoopProgram],
+  imports: [ProfileCard, CoopProgram, TChart],
   templateUrl: './about-me.html',
   styleUrl: './about-me.css'
 })

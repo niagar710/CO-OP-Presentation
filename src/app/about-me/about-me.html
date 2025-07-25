@@ -5,7 +5,6 @@
       <li><a class="nav-link" (click)="scrollTo('coop-program', $event)">CO-OP Program</a></li>
       <li><a class="nav-link" (click)="scrollTo('key-learnings', $event)">Key Learnings</a></li>
       <li><a class="nav-link" (click)="scrollTo('growth', $event)">Developer Growth</a></li>
-      <li><a class="nav-link" (click)="scrollTo('timeline', $event)">Timeline</a></li>
     </ul>
   </aside>
 
@@ -21,20 +20,24 @@
     </section>
 
     <section id="key-learnings">
-      <h2>Key Learnings or Highlights</h2>
+      <h2>Key Learnings & Highlights</h2>
       <ul>
-        <li>Gained hands-on experience with Angular...</li>
+        <section class="bubble-highlights">
+          <div class="bubble-row">
+            <div class="bubble pastel-blue">Debugged Fullstack Issues</div>
+            <div class="bubble pastel-pink">Frontend Development via Angular</div>
+            <div class="bubble pastel-green">Figma Design</div>
+            <div class="bubble pastel-yellow">SSMS Query Scripting</div>
+            <div class="bubble pastel-purple">Explored API Logic in EFC</div>
+            <!-- <div class="bubble pastel-orange">Debugged Fullstack Issues</div> -->
+          </div>
+        </section>
       </ul>
     </section>
 
     <section id="growth">
       <h2>My Growth as a Developer</h2>
-      <p>When I started the program, I had limited experience...</p>
-    </section>
-
-    <section id="timeline">
-      <h2>Photo or Timeline Visual</h2>
-      <p>Timeline or images go here.</p>
+        <app-t-chart></app-t-chart>
     </section>
   </section>
 </div>

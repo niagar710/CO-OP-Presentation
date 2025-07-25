@@ -55,3 +55,81 @@ h2 {
   margin-bottom: 10px;
   color: #222;
 }
+
+.bubble-highlights {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.bubble-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bubble {
+  border-radius: 50%; 
+  background: #ffffff;
+  border: 2px solid #2575fc;
+  color: #2575fc;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.pastel-blue {
+  background-color: #d0e8f2;
+  border-color: #7fb3d5;
+  color: #2e86c1;
+}
+
+.pastel-pink {
+  background-color: #fce4ec;
+  border-color: #f8bbd0;
+  color: #c2185b;
+}
+
+.pastel-green {
+  background-color: #e0f7e9;
+  border-color: #a5d6a7;
+  color: #388e3c;
+}
+
+.pastel-yellow {
+  background-color: #fff9c4;
+  border-color: #fff176;
+  color: #fbc02d;
+}
+
+.pastel-purple {
+  background-color: #ede7f6;
+  border-color: #b39ddb;
+  color: #6a1b9a;
+}
+
+.pastel-orange {
+  background-color: #ffe0b2;
+  border-color: #ffcc80;
+  color: #ef6c00;
+}
+
+.bubble:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .bubble {
+    width: 90px;
+    height: 90px;
+    font-size: 0.75rem;
+  }
+}
