@@ -2,8 +2,10 @@
   command = "ng build --configuration=production"
   publish = "dist/EndOfProgramWeb/browser"
 
+[functions]
+  directory = "netlify/functions"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/server"
   status = 200
