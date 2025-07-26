@@ -2,12 +2,6 @@
   command = "ng build --configuration production"
   publish = "dist/EndOfProgramWeb/browser"
 
-[[plugins]]
-  package = "@netlify/plugin-angular-runtime"
-  # Disable the plugin
-  [plugins.inputs]
-  enabled = false
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
