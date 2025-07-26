@@ -1,10 +1,10 @@
 {
   "routes": {
-    "/CO-OP-Presentation": {},
-    "/CO-OP-Presentation/AboutMe": {},
-    "/CO-OP-Presentation/Projects": {},
-    "/CO-OP-Presentation/Skills": {},
-    "/CO-OP-Presentation/Testimonials": {},
-    "/CO-OP-Presentation/home": {}
+    "/CO-OP-Presentation/EndOfProgramWeb": {},
+    "/CO-OP-Presentation/EndOfProgramWeb/AboutMe": {},
+    "/CO-OP-Presentation/EndOfProgramWeb/Projects": {},
+    "/CO-OP-Presentation/EndOfProgramWeb/Skills": {},
+    "/CO-OP-Presentation/EndOfProgramWeb/Testimonials": {},
+    "/CO-OP-Presentation/EndOfProgramWeb/home": {}
   }
 }

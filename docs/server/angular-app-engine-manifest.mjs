@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/CO-OP-Presentation',
+  basePath: '/CO-OP-Presentation/EndOfProgramWeb',
   supportedLocales: {
   "en-US": ""
 },
