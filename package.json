@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:static": "ng run EndOfProgramWeb:build-static:production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:EndOfProgramWeb": "node dist/EndOfProgramWeb/server/server.mjs"
@@ -39,6 +40,7 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^20.1.3",
     "@angular/build": "^20.1.1",
     "@angular/cli": "^20.1.1",
     "@angular/compiler-cli": "^20.1.0",
