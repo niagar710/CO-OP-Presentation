@@ -3,7 +3,7 @@
   publish = "dist/EndOfProgramWeb/browser"
 
 [[plugins]]
-  package = "@netlify/plugin-angular-runtime"
+  package = "@netlify/angular-runtime"
   # Disable the plugin
   [plugins.inputs]
   enabled = false
