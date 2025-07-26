@@ -1,1 +1,13 @@
-<p>testimonials works!</p>
+<div class="card-container">
+  <div class="reflection-card" *ngFor="let card of reflectionCards" [@fadeIn]>
+    <div class="card-inner">
+      <div class="card-front">
+        <h3>{{ card.title }}</h3>
+        <p class="quote">“{{ card.quote }}”</p>
+      </div>
+      <div class="card-back">
+        <p>{{ card.reflection }}</p>
+      </div>
+    </div>
+  </div>
+</div>
