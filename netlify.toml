@@ -8,6 +8,10 @@
   [plugins.inputs]
   enabled = false
 
+[build.environment]
+  NODE_VERSION = "18"
+
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
