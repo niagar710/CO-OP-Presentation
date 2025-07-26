@@ -53,3 +53,11 @@
   justify-content: center;
   font-size: 12px;
 }
+
+.final-card .card-front,
+.final-card .card-back {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 14px;
+}

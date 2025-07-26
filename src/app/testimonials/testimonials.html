@@ -1,5 +1,10 @@
 <div class="card-container">
-  <div class="reflection-card" *ngFor="let card of reflectionCards" [@fadeIn]>
+  <div
+    class="reflection-card"
+    *ngFor="let card of reflectionCards"
+    [@fadeIn]
+    [ngClass]="{ 'final-card': card.isFinal }"
+  >
     <div class="card-inner">
       <div class="card-front">
         <h3>{{ card.title }}</h3>
