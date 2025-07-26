@@ -3,7 +3,7 @@
   padding: 2rem;
   max-width: 1200px;
   margin: auto;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Quicksands";
 }
 
 h2 {
@@ -90,14 +90,14 @@ h2 {
 }
 
 .bubble-text {
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
   line-height: 1.4;
   padding: 0 1rem;
   max-width: 90%;
 }
 
 .bubble-text h3 {
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   color: #0d47a1;
   margin-bottom: 0.6rem;
 }
@@ -107,7 +107,7 @@ h2 {
 }
 
 .bubble-petmatch {
-  background-color: #E2E7F8; 
+  background-color: #e2e7f8;
 }
 
 @media screen and (max-width: 600px) {
