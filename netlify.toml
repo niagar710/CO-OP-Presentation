@@ -1,15 +1,6 @@
 [build]
-  command = "ng build"
+  command = "ng build --configuration=production"
   publish = "dist/EndOfProgramWeb/browser"
-
-[[plugins]]
-  package = "@netlify/angular-runtime"
-  # Disable the plugin
-  [plugins.inputs]
-  enabled = false
-
-[build.environment]
-  NODE_VERSION = "18"
 
 
 [[redirects]]
