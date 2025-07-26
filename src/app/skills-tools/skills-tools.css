@@ -1,0 +1,133 @@
+.hero-section {
+  padding: 2rem;
+  border-radius: 12px;
+  margin: auto;
+}
+
+.hero-content h2, .hero-content h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-family: 'Quicksand';
+}
+
+.focus-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-family: 'Quicksand';
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  font-family: 'Quicksand';
+  background-color: #ede7f6;
+  color: #6a1b9a;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #d1c4e9;
+}
+
+.quiz-setup {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-end;
+  font-family: 'Quicksand';
+}
+
+.quiz-setup label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #1565c0; 
+  font-size: 0.95rem;
+}
+
+.quiz-setup select {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #e3f2fd; 
+  color: #1565c0;
+  transition: border-color 0.3s ease;
+}
+
+.quiz-setup select:focus {
+  border-color: #42a5f5;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(66, 165, 245, 0.3);
+}
+
+.quiz-setup button {
+  padding: 0.6rem 1.2rem;
+  background-color: #42a5f5; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-setup button:hover {
+  background-color: #1e88e5; 
+}
+
+.questions {
+  padding-left: 2rem;
+}
+
+.question-card {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Quicksand';
+  max-width: 800px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: rgba(224, 223, 223, 0.835);
+}
+
+li.correct {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+li.incorrect {
+  background-color: #ffebee;
+  color: #c62828;
+  font-weight: bold;
+}

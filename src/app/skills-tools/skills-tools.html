@@ -1,0 +1,70 @@
+<section class="hero-section">
+  <div class="hero-content">
+    <h2>Development Focus</h2>
+    <p class="focus-description">
+      My development journey continues to evolve within the realm of Web Development, where I’m constantly enhancing my software engineering skills. In my new role at State Farm, I’m expanding my expertise into ServiceNow development, focusing on building automated scripts and developing custom applications tailored to enterprise workflows and business needs within the platform.
+    </p>
+
+    <h3>Tech Stack Highlights</h3>
+    <div class="tag-container">
+      <span class="tag">Angular</span>
+      <span class="tag">REST APIs</span>
+      <span class="tag">Entity Framework Core</span>
+      <span class="tag">SSMS</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">Azure Cosmos DB</span>
+      <span class="tag">C#</span>
+      <span class="tag">Java</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">ServiceNow</span>
+      <span class="tag">Figma</span>
+    </div>
+  </div>
+</section>
+
+<div class="quiz-setup">
+  <label>
+    Number of Questions:
+    <select [(ngModel)]="numQuestions">
+      <option *ngFor="let num of numQuestionsOptions" [value]="num">{{ num }}</option>
+    </select>
+  </label>
+
+  <label>
+    Category:
+    <select [(ngModel)]="selectedCategory">
+      <option *ngFor="let cat of categoryOptions" [value]="cat.id">{{ cat.name }}</option>
+    </select>
+  </label>
+
+  <label>
+    Difficulty:
+    <select [(ngModel)]="selectedDifficulty">
+      <option *ngFor="let diff of difficultyOptions" [value]="diff">{{ diff | titlecase }}</option>
+    </select>
+  </label>
+
+  <button (click)="startQuiz()">Start Quiz</button>
+  <button *ngIf="questions.length > 0" (click)="resetQuiz()" class="reset-btn">Reset Quiz</button>
+</div>
+
+<div class="questions">
+  <div class="quiz-cards" *ngIf="questions.length > 0">
+    <div *ngFor="let question of questions" class="question-card">
+        <h4 [innerHTML]="question.question"></h4>
+        <ul>
+            <li *ngFor="let answer of question.allAnswers" [ngClass]="{
+                'correct': question.isAnswered && isCorrect(question, answer),
+                'incorrect': question.isAnswered && answer === question.selectedAnswer && !isCorrect(question, answer)
+            }" (click)="!question.isAnswered && selectAnswer(question, answer)">
+                {{ answer }}
+                <span *ngIf="question.isAnswered && isCorrect(question, answer)">✔️</span>
+                <span
+                    *ngIf="question.isAnswered && answer === question.selectedAnswer && !isCorrect(question, answer)">❌</span>
+            </li>
+        </ul>
+    </div>
+  </div>  
+</div>
+
+
