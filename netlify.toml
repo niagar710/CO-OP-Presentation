@@ -1,0 +1,18 @@
+[build]
+  command = "ng build"
+  publish = "dist/EndOfProgramWeb/browser"
+
+[[plugins]]
+  package = "@netlify/plugin-angular-runtime"
+  # Disable the plugin
+  [plugins.inputs]
+  enabled = false
+
+[build.environment]
+  NODE_VERSION = "18"
+
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
