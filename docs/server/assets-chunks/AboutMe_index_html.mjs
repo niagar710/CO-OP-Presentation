@@ -1,0 +1,569 @@
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head><style type="text/css" id="fa-auto-css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-regular: normal 400 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-light: normal 300 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-thin: normal 100 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-regular: normal 400 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-light: normal 300 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-thin: normal 100 1em/1 "Font Awesome 6 Sharp Duotone";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-counter-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(-1 * var(--fa-li-width, 2em));
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  animation-name: fa-beat;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  animation-name: fa-bounce;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  animation-name: fa-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  animation-name: fa-beat-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  animation-name: fa-flip;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  animation-name: fa-shake;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  animation-name: fa-spin;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  animation-name: fa-spin;
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    animation-delay: -1ms;
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  4% {
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-22deg);
+  }
+  20% {
+    transform: rotate(22deg);
+  }
+  32% {
+    transform: rotate(-12deg);
+  }
+  36% {
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  transform: rotate(var(--fa-rotate-angle, 0));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}</style><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8">
+  <title>End Of Program</title>
+  <base href="/CO-OP-Presentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>@font-face{font-family:'Quicksand';font-style:normal;font-weight:300 700;font-display:swap;src:url(https://fonts.gstatic.com/s/quicksand/v36/6xKtdSZaM9iE8KbpRA_hJFQNcOM.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Quicksand';font-style:normal;font-weight:300 700;font-display:swap;src:url(https://fonts.gstatic.com/s/quicksand/v36/6xKtdSZaM9iE8KbpRA_hJVQNcOM.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Quicksand';font-style:normal;font-weight:300 700;font-display:swap;src:url(https://fonts.gstatic.com/s/quicksand/v36/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <style>@font-face{font-family:'Playwrite HU';font-style:normal;font-weight:100 400;font-display:swap;src:url(https://fonts.gstatic.com/s/playwritehu/v5/A2Bdn59A0g0xA3zDhFw-0vfVVg.woff2) format('woff2');}@font-face{font-family:'Quicksand';font-style:normal;font-weight:300 700;font-display:swap;src:url(https://fonts.gstatic.com/s/quicksand/v36/6xKtdSZaM9iE8KbpRA_hJFQNcOM.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Quicksand';font-style:normal;font-weight:300 700;font-display:swap;src:url(https://fonts.gstatic.com/s/quicksand/v36/6xKtdSZaM9iE8KbpRA_hJVQNcOM.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Quicksand';font-style:normal;font-weight:300 700;font-display:swap;src:url(https://fonts.gstatic.com/s/quicksand/v36/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+<style>html,body{height:100%;margin:0}.app-container{display:flex;flex-direction:column;min-height:100vh}.content{flex:1}
+</style><link rel="stylesheet" href="styles-GO7RAGFM.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-GO7RAGFM.css"></noscript><style ng-app-id="ng">.custom-header[_ngcontent-ng-c1416393948]{background:linear-gradient(to right,#7ac1ff,#a7b5e4);color:#fff;padding:10px;display:flex;align-items:center;justify-content:space-between}.logo[_ngcontent-ng-c1416393948]{height:75px}.nav-links[_ngcontent-ng-c1416393948]{display:flex;gap:30px;justify-content:center;flex-grow:1}.nav-links[_ngcontent-ng-c1416393948]   a[_ngcontent-ng-c1416393948]{color:#fff;text-decoration:none;font-family:Quicksand;font-weight:700;position:relative;display:flex;align-items:center;gap:8px}.nav-links[_ngcontent-ng-c1416393948]   a[_ngcontent-ng-c1416393948]:after{content:"";position:absolute;bottom:-5px;left:0;width:0%;height:2px;background-color:#fff;transition:width .3s ease-in-out}.nav-links[_ngcontent-ng-c1416393948]   a[_ngcontent-ng-c1416393948]:hover:after{width:100%}.nav-links[_ngcontent-ng-c1416393948]   a[_ngcontent-ng-c1416393948]:hover{color:#f0f0f0}</style><style ng-app-id="ng">.custom-footer[_ngcontent-ng-c3533373034]{background:linear-gradient(to right,#7ac1ff,#a7b5e4);color:#fff;padding:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Quicksand}.footer-branding[_ngcontent-ng-c3533373034]{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:8px}.slogan[_ngcontent-ng-c3533373034]{font-weight:600}.footer-branding[_ngcontent-ng-c3533373034]   img[_ngcontent-ng-c3533373034]{margin-bottom:5px}</style><style ng-app-id="ng">[_nghost-ng-c4269691382]{display:block;font-family:Quicksand,sans-serif}html[_ngcontent-ng-c4269691382]{scroll-behavior:smooth}.about-me-container[_ngcontent-ng-c4269691382]{display:flex;padding:40px 20px}.sidebar[_ngcontent-ng-c4269691382]{width:200px;position:fixed;top:100px;background-color:transparent;padding-right:20px}.sidebar[_ngcontent-ng-c4269691382]   ul[_ngcontent-ng-c4269691382]{list-style:none;padding:0}.sidebar[_ngcontent-ng-c4269691382]   li[_ngcontent-ng-c4269691382]{margin-bottom:16px}.nav-link[_ngcontent-ng-c4269691382]{text-decoration:none;color:#333;font-weight:600;transition:all .3s ease}.nav-link[_ngcontent-ng-c4269691382]:hover, .nav-link.active[_ngcontent-ng-c4269691382]{text-decoration:underline;color:#07c}.main-content[_ngcontent-ng-c4269691382]{flex:1;max-width:1200px;margin-left:220px}section[_ngcontent-ng-c4269691382]{margin-bottom:80px}h2[_ngcontent-ng-c4269691382]{margin-bottom:10px;color:#222}.bubble-highlights[_ngcontent-ng-c4269691382]{padding:2rem 0;text-align:center}.bubble-row[_ngcontent-ng-c4269691382]{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}.bubble[_ngcontent-ng-c4269691382]{border-radius:50%;background:#fff;border:2px solid #2575fc;color:#2575fc;width:100px;height:100px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:600;padding:1rem;box-shadow:0 4px 10px #0000001a;transition:transform .3s ease;flex-shrink:0}.pastel-blue[_ngcontent-ng-c4269691382]{background-color:#d0e8f2;border-color:#7fb3d5;color:#2e86c1}.pastel-pink[_ngcontent-ng-c4269691382]{background-color:#fce4ec;border-color:#f8bbd0;color:#c2185b}.pastel-green[_ngcontent-ng-c4269691382]{background-color:#e0f7e9;border-color:#a5d6a7;color:#388e3c}.pastel-yellow[_ngcontent-ng-c4269691382]{background-color:#fff9c4;border-color:#fff176;color:#fbc02d}.pastel-purple[_ngcontent-ng-c4269691382]{background-color:#ede7f6;border-color:#b39ddb;color:#6a1b9a}.pastel-orange[_ngcontent-ng-c4269691382]{background-color:#ffe0b2;border-color:#ffcc80;color:#ef6c00}.bubble[_ngcontent-ng-c4269691382]:hover{transform:scale(1.05)}@media (max-width: 768px){.bubble[_ngcontent-ng-c4269691382]{width:90px;height:90px;font-size:.75rem}}</style><style ng-app-id="ng">.profile-card[_ngcontent-ng-c1871921926]{background-color:#f8d7da;padding:20px;border-radius:12px;font-family:Quicksand,sans-serif;margin:auto}.top-section[_ngcontent-ng-c1871921926]{display:flex;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:100px}.profile-photo[_ngcontent-ng-c1871921926]{width:min(25vw,200px);aspect-ratio:1 / 1;border-radius:50%;object-fit:cover;box-shadow:0 4px 12px #0003}.info-row[_ngcontent-ng-c1871921926]{display:flex;flex-direction:row;gap:120px}.info-group[_ngcontent-ng-c1871921926]{display:flex;flex-direction:column;align-items:flex-start}.info-label[_ngcontent-ng-c1871921926]{font-weight:700;font-size:14px;margin-bottom:4px}.info-value[_ngcontent-ng-c1871921926]{font-size:16px;font-weight:400}.info-group[_ngcontent-ng-c1871921926], .info-label[_ngcontent-ng-c1871921926], .info-value[_ngcontent-ng-c1871921926]{background-color:transparent;box-shadow:none;padding:0;border-radius:0}.bottom-section[_ngcontent-ng-c1871921926]{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.card-box[_ngcontent-ng-c1871921926]{background-color:#fff;border-radius:8px;padding:15px;flex:1;min-width:200px;box-shadow:0 2px 6px #0000001a}.card-box[_ngcontent-ng-c1871921926]   h3[_ngcontent-ng-c1871921926]{margin-bottom:10px;font-size:18px;color:#c2185b;display:flex;align-items:center;gap:8px}.card-content[_ngcontent-ng-c1871921926]   p[_ngcontent-ng-c1871921926]{margin:6px 0}@media (max-width: 1300px){.top-section[_ngcontent-ng-c1871921926]{flex-direction:column;align-items:center;gap:20px}.info-row[_ngcontent-ng-c1871921926]{flex-direction:column;gap:16px;align-items:center;text-align:center}.info-group[_ngcontent-ng-c1871921926]{align-items:center}}</style><style ng-app-id="ng">.coop-container[_ngcontent-ng-c3880708007]{padding:2rem;border-radius:12px;margin-top:2rem}.badges[_ngcontent-ng-c3880708007]{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.5rem}.badge[_ngcontent-ng-c3880708007]{display:flex;align-items:center;gap:.5rem;background-color:#e0e7ff;padding:.5rem 1rem;border-radius:8px;font-weight:500}.badge[_ngcontent-ng-c3880708007]   i[_ngcontent-ng-c3880708007]{color:#4f46e5}.description[_ngcontent-ng-c3880708007]{margin-bottom:2rem;font-size:1rem;line-height:1.6}.timeline[_ngcontent-ng-c3880708007]{display:flex;justify-content:space-between;align-items:center;border-top:2px solid #d1d5db;padding-top:1rem}.step[_ngcontent-ng-c3880708007]{text-align:center;font-size:.9rem;font-weight:600;color:#374151}</style><style ng-app-id="ng">.tchart-container[_ngcontent-ng-c2228646324]{padding:2rem;text-align:center}.tchart-grid[_ngcontent-ng-c2228646324]{display:grid;grid-template-columns:1fr 1fr}.header[_ngcontent-ng-c2228646324]{font-weight:700;padding:1rem;border-bottom:2px solid #ccc;display:flex;justify-content:center;align-items:center;gap:.5rem;font-size:1.2rem}.header[_ngcontent-ng-c2228646324]:first-child{border-right:1px solid #ccc}.cell[_ngcontent-ng-c2228646324]{padding:1rem;border-right:1px solid #ccc}.cell[_ngcontent-ng-c2228646324]:nth-child(4){border-right:none}.qualities[_ngcontent-ng-c2228646324]{display:flex;flex-direction:column;align-items:center;gap:.5rem;font-size:1rem}</style></head>
+<body><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
+</script><script>window.__jsaction_bootstrap(document.body,"ng",["click"],[]);</script>
+  <app-root ng-version="20.1.2" ngh="1" ng-server-context="ssg"><div class="app-container"><app-header _nghost-ng-c1416393948 ngh="0"><header _ngcontent-ng-c1416393948 class="custom-header"><img _ngcontent-ng-c1416393948 src="/assets/Header Image.png" alt="Logo" class="logo"><nav _ngcontent-ng-c1416393948 class="nav-links"><a _ngcontent-ng-c1416393948 href="/home"><fa-icon _ngcontent-ng-c1416393948 class="ng-fa-icon" ngh="0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house" class="svg-inline--fa fa-house fa-undefined fa-pull-undefined" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z"/></svg></fa-icon> Home</a><a _ngcontent-ng-c1416393948 href="/AboutMe"><fa-icon _ngcontent-ng-c1416393948 class="ng-fa-icon" ngh="0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-undefined fa-pull-undefined" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"/></svg></fa-icon> About Me/Program Overview</a><a _ngcontent-ng-c1416393948 href="/Projects"><fa-icon _ngcontent-ng-c1416393948 class="ng-fa-icon" ngh="0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="folder-open" class="svg-inline--fa fa-folder-open fa-undefined fa-pull-undefined" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M56 225.6L32.4 296.2 32.4 96c0-35.3 28.7-64 64-64l138.7 0c13.8 0 27.3 4.5 38.4 12.8l38.4 28.8c5.5 4.2 12.3 6.4 19.2 6.4l117.3 0c35.3 0 64 28.7 64 64l0 16-365.4 0c-41.3 0-78 26.4-91.1 65.6zM477.8 448L99 448c-32.8 0-55.9-32.1-45.5-63.2l48-144C108 221.2 126.4 208 147 208l378.8 0c32.8 0 55.9 32.1 45.5 63.2l-48 144c-6.5 19.6-24.9 32.8-45.5 32.8z"/></svg></fa-icon> Project Portfolio</a><a _ngcontent-ng-c1416393948 href="/Skills"><fa-icon _ngcontent-ng-c1416393948 class="ng-fa-icon" ngh="0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="screwdriver-wrench" class="svg-inline--fa fa-screwdriver-wrench fa-undefined fa-pull-undefined" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M224.1 97.1l0 49.6 .5 .5c6.5-82.4 75.4-147.2 159.5-147.2 20.1 0 39.4 3.7 57.1 10.5 10 3.8 11.8 16.5 4.3 24.1l-88.7 88.7c-3 3-4.7 7.1-4.7 11.3l0 41.4c0 8.8 7.2 16 16 16l41.4 0c4.2 0 8.3-1.7 11.3-4.7l88.7-88.7c7.6-7.6 20.3-5.7 24.1 4.3 6.8 17.7 10.5 37 10.5 57.1 0 60.6-33.7 113.4-83.5 140.5l81.5 81.5c18.7 18.7 18.7 49.1 0 67.9l-60.1 60.1c-18.7 18.7-49.1 18.7-67.9 0L288.1 384c-27.4-27.4-33.6-67.9-18.5-101.3l-90.7-90.7-49.6 0c-10.7 0-20.7-5.3-26.6-14.2L23.4 58.9c-4.2-6.3-3.4-14.8 2-20.2L70.8-6.7c5.4-5.4 13.8-6.2 20.2-2L209.9 70.5c8.9 5.9 14.2 15.9 14.2 26.6zm-8.5 199.5c-6.3 37 2.4 76.1 26.4 107.4L147 498.9c-28.1 28.1-73.7 28.1-101.8 0s-28.1-73.7 0-101.8l135.4-135.4 35 35z"/></svg></fa-icon> Skills &amp; Tools</a><a _ngcontent-ng-c1416393948 href="/Testimonials"><fa-icon _ngcontent-ng-c1416393948 class="ng-fa-icon" ngh="0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-dots" class="svg-inline--fa fa-comment-dots fa-undefined fa-pull-undefined" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 480c141.4 0 256-107.5 256-240S397.4 0 256 0 0 107.5 0 240c0 54.3 19.2 104.3 51.6 144.5L2.8 476.8c-4.8 9-3.3 20 3.6 27.5s17.8 9.8 27.1 5.8l118.4-50.7C183.7 472.6 218.9 480 256 480zM128 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm128 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm96 32a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></fa-icon> Testimonials &amp; Reflections</a></nav></header></app-header><main class="content"><router-outlet></router-outlet><app-about-me _nghost-ng-c4269691382 ngh="0"><div _ngcontent-ng-c4269691382 class="about-me-container"><aside _ngcontent-ng-c4269691382 class="sidebar"><ul _ngcontent-ng-c4269691382><li _ngcontent-ng-c4269691382><a _ngcontent-ng-c4269691382 class="nav-link" jsaction="click:;">About Me</a></li><li _ngcontent-ng-c4269691382><a _ngcontent-ng-c4269691382 class="nav-link" jsaction="click:;">CO-OP Program</a></li><li _ngcontent-ng-c4269691382><a _ngcontent-ng-c4269691382 class="nav-link" jsaction="click:;">Key Learnings</a></li><li _ngcontent-ng-c4269691382><a _ngcontent-ng-c4269691382 class="nav-link" jsaction="click:;">Developer Growth</a></li></ul></aside><section _ngcontent-ng-c4269691382 class="main-content"><section _ngcontent-ng-c4269691382 id="about-me"><h2 _ngcontent-ng-c4269691382>About Me</h2><app-profile-card _ngcontent-ng-c4269691382 _nghost-ng-c1871921926 ngh="0"><div _ngcontent-ng-c1871921926 class="profile-card"><div _ngcontent-ng-c1871921926 class="top-section"><img _ngcontent-ng-c1871921926 src="assets/About Me Photo.jpg" alt="Profile Photo" class="profile-photo"><div _ngcontent-ng-c1871921926 class="info-row"><div _ngcontent-ng-c1871921926 class="info-group"><span _ngcontent-ng-c1871921926 class="info-label">Age</span><span _ngcontent-ng-c1871921926 class="info-value">22</span></div><div _ngcontent-ng-c1871921926 class="info-group"><span _ngcontent-ng-c1871921926 class="info-label">School</span><span _ngcontent-ng-c1871921926 class="info-value">Kennesaw State University</span></div><div _ngcontent-ng-c1871921926 class="info-group"><span _ngcontent-ng-c1871921926 class="info-label">Major/Degree</span><span _ngcontent-ng-c1871921926 class="info-value">B.S. in Software Engineering</span><span _ngcontent-ng-c1871921926 class="info-value">Cum Laude</span></div></div></div><div _ngcontent-ng-c1871921926 class="bottom-section"><div _ngcontent-ng-c1871921926 class="card-box"><h3 _ngcontent-ng-c1871921926><span _ngcontent-ng-c1871921926 class="icon">📚</span> Background</h3><div _ngcontent-ng-c1871921926 class="card-content"><p _ngcontent-ng-c1871921926>Warner Robins, GA → Atlanta, GA</p><p _ngcontent-ng-c1871921926>IT Analyst CO-OP</p><p _ngcontent-ng-c1871921926>Software Engineer Internship - State Farm</p></div></div><div _ngcontent-ng-c1871921926 class="card-box"><h3 _ngcontent-ng-c1871921926><span _ngcontent-ng-c1871921926 class="icon">🎉</span> Fun Facts / Interests</h3><div _ngcontent-ng-c1871921926 class="card-content"><p _ngcontent-ng-c1871921926>Love Traveling</p><p _ngcontent-ng-c1871921926>Enjoy Planning</p><p _ngcontent-ng-c1871921926>Avid Binge Watcher</p></div></div><div _ngcontent-ng-c1871921926 class="card-box"><h3 _ngcontent-ng-c1871921926><span _ngcontent-ng-c1871921926 class="icon">🎯</span> Goals</h3><div _ngcontent-ng-c1871921926 class="card-content"><p _ngcontent-ng-c1871921926>M.S. Engineering Management</p><p _ngcontent-ng-c1871921926>Lead Software Engineer → Business Analyst → Software Project Manager</p><p _ngcontent-ng-c1871921926>*Certifications</p></div></div></div></div></app-profile-card></section><section _ngcontent-ng-c4269691382 id="coop-program"><h2 _ngcontent-ng-c4269691382>Programmer Analyst Co-op Program</h2><app-coop-program _ngcontent-ng-c4269691382 _nghost-ng-c3880708007 ngh="0"><section _ngcontent-ng-c3880708007 class="coop-container"><div _ngcontent-ng-c3880708007 class="badges"><div _ngcontent-ng-c3880708007 class="badge"><i _ngcontent-ng-c3880708007 class="fas fa-clock"></i><span _ngcontent-ng-c3880708007>January 2024 – August 2025</span></div><div _ngcontent-ng-c3880708007 class="badge"><i _ngcontent-ng-c3880708007 class="fas fa-tools"></i><span _ngcontent-ng-c3880708007>Azure DevOps, SSMS, Angular, C# &amp; EFC</span></div><div _ngcontent-ng-c3880708007 class="badge"><i _ngcontent-ng-c3880708007 class="fas fa-users"></i><span _ngcontent-ng-c3880708007>Proton Team</span></div></div><p _ngcontent-ng-c3880708007 class="description"> The Programmer Analyst Co-op Program at INPO gives students the chance to work on real software projects while building technical and professional skills in a collaborative environment. As a co-op, I contributed to application development using tools like C#, Angular, and SQL Server, and worked closely with mentors and full-time developers to support ongoing projects and improve internal systems. The experience offered a strong mix of hands-on coding, mentorship, and exposure to enterprise-level tools and workflows. </p><div _ngcontent-ng-c3880708007 class="timeline"><div _ngcontent-ng-c3880708007 class="step">🔍 Onboarding</div><div _ngcontent-ng-c3880708007 class="step">🛠 Project Work / Debugging</div><div _ngcontent-ng-c3880708007 class="step">📈 End of Semester Review</div></div></section></app-coop-program></section><section _ngcontent-ng-c4269691382 id="key-learnings"><h2 _ngcontent-ng-c4269691382>Key Learnings &amp; Highlights</h2><ul _ngcontent-ng-c4269691382><section _ngcontent-ng-c4269691382 class="bubble-highlights"><div _ngcontent-ng-c4269691382 class="bubble-row"><div _ngcontent-ng-c4269691382 class="bubble pastel-blue">Debugged Fullstack Issues</div><div _ngcontent-ng-c4269691382 class="bubble pastel-pink">Frontend Development via Angular</div><div _ngcontent-ng-c4269691382 class="bubble pastel-green">Figma Design</div><div _ngcontent-ng-c4269691382 class="bubble pastel-yellow">SSMS Query Scripting</div><div _ngcontent-ng-c4269691382 class="bubble pastel-purple">Explored API Logic in EFC</div></div></section></ul></section><section _ngcontent-ng-c4269691382 id="growth"><h2 _ngcontent-ng-c4269691382>My Growth as a Developer</h2><app-t-chart _ngcontent-ng-c4269691382 _nghost-ng-c2228646324 ngh="0"><div _ngcontent-ng-c2228646324 class="tchart-container"><div _ngcontent-ng-c2228646324 class="tchart-grid"><div _ngcontent-ng-c2228646324 class="header"><fa-icon _ngcontent-ng-c2228646324 class="ng-fa-icon" ngh="0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hourglass" class="svg-inline--fa fa-hourglass fa-undefined fa-pull-undefined" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M0 32C0 14.3 14.3 0 32 0L352 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 11c0 42.4-16.9 83.1-46.9 113.1l-67.9 67.9 67.9 67.9c30 30 46.9 70.7 46.9 113.1l0 11c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-11c0-42.4 16.9-83.1 46.9-113.1l67.9-67.9-67.9-67.9C48.9 158.1 32 117.4 32 75l0-11C14.3 64 0 49.7 0 32zM96 64l0 11c0 25.5 10.1 49.9 28.1 67.9l67.9 67.9 67.9-67.9c18-18 28.1-42.4 28.1-67.9l0-11-192 0zm0 384l192 0 0-11c0-25.5-10.1-49.9-28.1-67.9l-67.9-67.9-67.9 67.9c-18 18-28.1 42.4-28.1 67.9l0 11z"/></svg></fa-icon> Then </div><div _ngcontent-ng-c2228646324 class="header"><fa-icon _ngcontent-ng-c2228646324 class="ng-fa-icon" ngh="0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rocket" class="svg-inline--fa fa-rocket fa-undefined fa-pull-undefined" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M128 320L24.5 320c-24.9 0-40.2-27.1-27.4-48.5L50 183.3C58.7 168.8 74.3 160 91.2 160l95 0c76.1-128.9 189.6-135.4 265.5-124.3 12.8 1.9 22.8 11.9 24.6 24.6 11.1 75.9 4.6 189.4-124.3 265.5l0 95c0 16.9-8.8 32.5-23.3 41.2l-88.2 52.9c-21.3 12.8-48.5-2.6-48.5-27.4L192 384c0-35.3-28.7-64-64-64l-.1 0zM400 160a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg></fa-icon> Now </div><div _ngcontent-ng-c2228646324 class="cell"><div _ngcontent-ng-c2228646324 class="qualities"><div _ngcontent-ng-c2228646324>Only basic understanding of HTML &amp; CSS</div><div _ngcontent-ng-c2228646324>Basic coding &amp; database experience</div><div _ngcontent-ng-c2228646324>Unfamiliar with debugging application-level issues</div><div _ngcontent-ng-c2228646324>No prior experience in full-stack development</div></div></div><div _ngcontent-ng-c2228646324 class="cell"><div _ngcontent-ng-c2228646324 class="qualities"><div _ngcontent-ng-c2228646324>Gained hands-on experience debugging application issues</div><div _ngcontent-ng-c2228646324>Capable of building responsive, real-time web features</div><div _ngcontent-ng-c2228646324>Learned modern tech stacks like Angular &amp; C# with EF Core</div><div _ngcontent-ng-c2228646324>Understand how backend APIs and frontend UIs work together</div></div></div></div></div></app-t-chart></section></section></div></app-about-me><!----></main><app-footer _nghost-ng-c3533373034 ngh="0"><footer _ngcontent-ng-c3533373034 class="custom-footer"><div _ngcontent-ng-c3533373034 class="footer-content"><div _ngcontent-ng-c3533373034 class="footer-branding"><strong _ngcontent-ng-c3533373034><span _ngcontent-ng-c3533373034>The Triple Threat</span></strong><img _ngcontent-ng-c3533373034 src="assets/The Triple Threat Logo.png" alt="The Triple Threat Logo"> | <span _ngcontent-ng-c3533373034 class="slogan">If It’s Broken, We Probably Broke It First.</span></div><p _ngcontent-ng-c3533373034>© 2025 Triple Threat Productions. All rights reserved.</p></div></footer></app-footer></div></app-root>
+<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-ER527SIT.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"3":[{"i":"c4269691382","r":1}]}}]}</script></body></html>`;

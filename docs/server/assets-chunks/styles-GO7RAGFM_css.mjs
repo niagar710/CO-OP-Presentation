@@ -1,0 +1,2 @@
+export default `html,body{height:100%;margin:0}.app-container{display:flex;flex-direction:column;min-height:100vh}.content{flex:1}
+`;
