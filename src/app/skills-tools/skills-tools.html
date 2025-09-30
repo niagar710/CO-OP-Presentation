@@ -2,22 +2,38 @@
   <div class="focus-content">
     <h2>Development Focus</h2>
     <p class="focus-description">
-      My development journey continues to evolve within the realm of Web Development, where I’m constantly enhancing my software engineering skills. In my new role at State Farm, I’m expanding my expertise into ServiceNow development, focusing on building automated scripts and developing custom applications tailored to enterprise workflows and business needs within the platform.
+      I’m continuing to grow as a software engineer, focusing on Web Development
+      and building modern, responsive applications. I’m excited to apply my
+      skills to personal projects and am actively seeking a full-time developer
+      role where I can make an impact.
     </p>
 
     <h3>Tech Stack Highlights</h3>
     <div class="tag-container">
       <span class="tag">Angular</span>
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">Typescript</span>
       <span class="tag">REST APIs</span>
       <span class="tag">Entity Framework Core</span>
       <span class="tag">SSMS</span>
       <span class="tag">MySQL</span>
       <span class="tag">Azure Cosmos DB</span>
+      <span class="tag">Git / GitHub / GitLab</span>
+      <span class="tag">Azure DevOps</span>
       <span class="tag">C#</span>
       <span class="tag">Java</span>
+      <span class="tag">Python</span>
       <span class="tag">Node.js</span>
+      <span class="tag">JavaScript</span>
       <span class="tag">ServiceNow</span>
       <span class="tag">Figma</span>
+      <span class="tag">Axure RP</span>
+      <span class="tag">Agile</span>
+      <span class="tag">Code Reviews</span>
+      <span class="tag">Requirements Analysis</span>
+      <span class="tag">Team Collaboration / Sprint Planning</span>
+      <span class="tag">Application Troubleshooting</span>
     </div>
   </div>
 </section>
@@ -27,45 +43,66 @@
   <label>
     Number of Questions:
     <select [(ngModel)]="numQuestions">
-      <option *ngFor="let num of numQuestionsOptions" [value]="num">{{ num }}</option>
+      <option *ngFor="let num of numQuestionsOptions" [value]="num">
+        {{ num }}
+      </option>
     </select>
   </label>
 
   <label>
     Category:
     <select [(ngModel)]="selectedCategory">
-      <option *ngFor="let cat of categoryOptions" [value]="cat.id">{{ cat.name }}</option>
+      <option *ngFor="let cat of categoryOptions" [value]="cat.id">
+        {{ cat.name }}
+      </option>
     </select>
   </label>
 
   <label>
     Difficulty:
     <select [(ngModel)]="selectedDifficulty">
-      <option *ngFor="let diff of difficultyOptions" [value]="diff">{{ diff | titlecase }}</option>
+      <option *ngFor="let diff of difficultyOptions" [value]="diff">
+        {{ diff | titlecase }}
+      </option>
     </select>
   </label>
 
   <button (click)="startQuiz()">Start Quiz</button>
-  <button *ngIf="questions.length > 0" (click)="resetQuiz()" class="reset-btn">Reset Quiz</button>
+  <button *ngIf="questions.length > 0" (click)="resetQuiz()" class="reset-btn">
+    Reset Quiz
+  </button>
 </div>
 
 <div class="questions">
   <div class="quiz-cards" *ngIf="questions.length > 0">
     <div *ngFor="let question of questions" class="question-card">
-        <h4 [innerHTML]="question.question"></h4>
-        <ul>
-            <li *ngFor="let answer of question.allAnswers" [ngClass]="{
-                'correct': question.isAnswered && isCorrect(question, answer),
-                'incorrect': question.isAnswered && answer === question.selectedAnswer && !isCorrect(question, answer)
-            }" (click)="!question.isAnswered && selectAnswer(question, answer)">
-                {{ answer }}
-                <span *ngIf="question.isAnswered && isCorrect(question, answer)">✔️</span>
-                <span
-                    *ngIf="question.isAnswered && answer === question.selectedAnswer && !isCorrect(question, answer)">❌</span>
-            </li>
-        </ul>
+      <h4 [innerHTML]="question.question"></h4>
+      <ul>
+        <li
+          *ngFor="let answer of question.allAnswers"
+          [ngClass]="{
+            correct: question.isAnswered && isCorrect(question, answer),
+            incorrect:
+              question.isAnswered &&
+              answer === question.selectedAnswer &&
+              !isCorrect(question, answer)
+          }"
+          (click)="!question.isAnswered && selectAnswer(question, answer)"
+        >
+          {{ answer }}
+          <span *ngIf="question.isAnswered && isCorrect(question, answer)"
+            >✔️</span
+          >
+          <span
+            *ngIf="
+              question.isAnswered &&
+              answer === question.selectedAnswer &&
+              !isCorrect(question, answer)
+            "
+            >❌</span
+          >
+        </li>
+      </ul>
     </div>
-  </div>  
+  </div>
 </div>
-
-

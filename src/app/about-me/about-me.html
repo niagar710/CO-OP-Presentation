@@ -1,10 +1,24 @@
 <div class="about-me-container">
   <aside class="sidebar">
     <ul>
-      <li><a class="nav-link" (click)="scrollTo('about-me', $event)">About Me</a></li>
-      <li><a class="nav-link" (click)="scrollTo('coop-program', $event)">CO-OP Program</a></li>
-      <li><a class="nav-link" (click)="scrollTo('key-learnings', $event)">Key Learnings</a></li>
-      <li><a class="nav-link" (click)="scrollTo('growth', $event)">Developer Growth</a></li>
+      <li>
+        <a class="nav-link" (click)="scrollTo('about-me', $event)">About Me</a>
+      </li>
+      <li>
+        <a class="nav-link" (click)="scrollTo('experience', $event)"
+          >Experience</a
+        >
+      </li>
+      <li>
+        <a class="nav-link" (click)="scrollTo('key-learnings', $event)"
+          >Key Learnings</a
+        >
+      </li>
+      <li>
+        <a class="nav-link" (click)="scrollTo('growth', $event)"
+          >Developer Growth</a
+        >
+      </li>
     </ul>
   </aside>
 
@@ -14,8 +28,7 @@
       <app-profile-card></app-profile-card>
     </section>
 
-    <section id="coop-program">
-      <h2>Programmer Analyst Co-op Program</h2>
+    <section id="experience">
       <app-coop-program></app-coop-program>
     </section>
 
@@ -25,7 +38,9 @@
         <section class="bubble-highlights">
           <div class="bubble-row">
             <div class="bubble pastel-blue">Debugged Fullstack Issues</div>
-            <div class="bubble pastel-pink">Frontend Development via Angular</div>
+            <div class="bubble pastel-pink">
+              Frontend Development via Angular
+            </div>
             <div class="bubble pastel-green">Figma Design</div>
             <div class="bubble pastel-yellow">SSMS Query Scripting</div>
             <div class="bubble pastel-purple">Explored API Logic in EFC</div>
@@ -37,7 +52,7 @@
 
     <section id="growth">
       <h2>My Growth as a Developer</h2>
-        <app-t-chart></app-t-chart>
+      <app-t-chart></app-t-chart>
     </section>
   </section>
 </div>
