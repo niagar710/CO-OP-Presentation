@@ -1,13 +1,20 @@
 import { Component } from '@angular/core';
-import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
-import {faHome, faUser, faFolderOpen, faTools, faCommentDots} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {
+  faHome,
+  faUser,
+  faFolderOpen,
+  faTools,
+  faCommentDots,
+  faLaptop,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [FontAwesomeModule],
   templateUrl: './header.html',
-  styleUrl: './header.css'
+  styleUrl: './header.css',
 })
 export class Header {
   faHome = faHome;
@@ -15,5 +22,5 @@ export class Header {
   faFolderOpen = faFolderOpen;
   faTools = faTools;
   faCommentDots = faCommentDots;
-
+  faLaptop = faLaptop;
 }
